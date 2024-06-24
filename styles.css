@@ -1,0 +1,40 @@
+:root {
+    /* Standarize Sizes */
+    font-size: 10px;
+
+    /* Color Scheme */
+    --bg-color: #373A40;
+    --hg-color: #686D76;
+    --hero-color: #DC5F00;
+    --font-color: #EEEEEE;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 1.6rem;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+/* TEMP reset */
+ul, a{
+    text-decoration: none;
+    color: var(--font-color);
+}
