@@ -52,8 +52,8 @@ img, picture, svg, video {
 /* navbar */
 nav {
     grid-area: navbar;
-    /* border-bottom: 1.5px solid var(--hg-color); */
-    box-shadow: 0 .5vh .5vh -.2vh var(--hg-color);
+    /* border-bottom: 1.5px solid var(--hero-color); */
+    box-shadow: 0 0.5vh 1.5vh -.65vh var(--hero-color);
 }
 .navbar {
     display: flex;
@@ -66,11 +66,130 @@ nav {
     background-color: var(--hg-color);
     justify-items: end;
     max-width: 250px;
+    border-radius: 10px;
+    box-shadow: -1vw .5vh 20px -10px var(--hero-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
+.profile img {
+    height: 50%;
+    object-fit: cover;
+}
+
+.profile h3 {
+    font-size: 2rem;
+}
+.profile > ul{
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+.profile > ul > li {
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--hero-color);
+}
+.profile li:hover{
+    color: var(--bg-color);
+    box-shadow: 0 0 2px 2px var(--bg-color);
+}
+.profile > ul > li > a{
+    display: inherit;
+}
+
 /* main content */
 .page {
     grid-area: main;
     overflow-y: auto;
+}
+
+section {
+    border: 1px solid;
+    padding-inline: 15px;
+}
+section.gallery h2 {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+#experience .gallery {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+}
+#experience .card {
+    max-width: none;
+}
+
+/* cards */
+.card {
+    background-color: var(--hg-color);
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 350px;
+    max-width: 350px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#projects .card img {
+    height: 60%;
+}
+
+#certifications .card img {
+    height: 85%;
+    width: 100%;
+    object-fit: contain;
+}#certifications .card h4 {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.6rem;
+}
+.card h5 {
+    font-size: 1.4rem;
+}
+.card p, .card ul{
+    font-size: 1.2rem;
+}
+
+/* tags */
+.tags {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2px;
+    /* justify-content: end; */
+    margin-right: 5px;
+}
+.tag {
+    color: var(--bg-color);
+    padding: 0 2px;
+    border-radius: 5px;
+    width: max-content;
+    height: min-content;
+}
+.py {
+    background-color: rgb(190, 190, 35);
+}
+.spark {
+    background-color: rgb(42, 175, 175);
+}
+.ml {
+    background-color: rgb(42, 222, 162);
 }
 
 /* mobile */
