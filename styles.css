@@ -109,9 +109,41 @@ nav {
     overflow-y: auto;
 }
 
+#home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+h1.hero {
+    font-size: 10vw;
+    border-top-left-radius: 20px 10px var(--hero-color);
+}
+h1.hero span {
+    color: var(--hero-color);
+}
+.subtitle, .emphasis {
+    font-size: 2rem;
+}
+.subtitle span {
+    text-decoration: underline solid var(--hero-color);
+}
+.subtitle{
+    font-style: oblique;
+    font-weight: bold;
+}.emphasis{
+    font-style:oblique;
+}
+
+.content-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid ;
+}
+
 section {
-    border: 1px solid;
-    padding-inline: 15px;
+    padding: 15px;
 }
 section.gallery h2 {
     display: block;
@@ -138,7 +170,8 @@ section.gallery h2 {
     background-color: var(--hg-color);
     border-radius: 15px;
     padding: 10px;
-    min-width: 350px;
+    /* min-width: 350px; */
+    width: 100%;
     max-width: 350px;
     height: 250px;
     margin: 0 auto;
@@ -194,13 +227,16 @@ section.gallery h2 {
 
 /* mobile */
 @media (max-width: 500px) {
+    .page {
+        overflow-y: unset;
+    }
     body {
         height: auto;
         overflow: unset;
         grid-template: 
         "navbar" 4vh
         "profile" 90vh
-        "main"
+        "main" 90vh
         / 1fr
         ; 
         gap: 5px;
