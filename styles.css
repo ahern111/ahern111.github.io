@@ -31,16 +31,16 @@ body {
     font-size: 1.6rem;
     height: 100vh;
     padding: 0 2.5vw;
-    overflow: hidden;
+    overflow: visible;
 
     /* grid set-up */
     display: grid;
     grid-template:
-    "profile navbar" 2.5vh
+    "profile navbar" 4vh
     "profile main" 90vh
     / minmax(150px, 250px) minmax(250px, 750px)
     ;
-    gap: 15px;
+    gap: 10px 15px;
     place-content: center;
 }
 
@@ -52,6 +52,8 @@ img, picture, svg, video {
 /* navbar */
 nav {
     grid-area: navbar;
+    /* border-bottom: 1.5px solid var(--hg-color); */
+    box-shadow: 0 .5vh .5vh -.2vh var(--hg-color);
 }
 .navbar {
     display: flex;
@@ -61,14 +63,39 @@ nav {
 /* profile */
 .profile {
     grid-area: profile;
-    background-color: #686D76;
+    background-color: var(--hg-color);
     justify-items: end;
     max-width: 250px;
-    border: 1px solid red;
 }
 /* main content */
 .page {
     grid-area: main;
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+
+/* mobile */
+@media (max-width: 500px) {
+    body {
+        height: auto;
+        overflow: unset;
+        grid-template: 
+        "navbar" 4vh
+        "profile" 90vh
+        "main"
+        / 1fr
+        ; 
+        gap: 5px;
+        padding: 2.5vh 2.5vw;
+    }
+    .profile, nav{
+        min-width: 100%;
+    }
+    nav {
+        position: fixed;
+        padding: 1.25vh 0;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-color);
+    }
 }
 
