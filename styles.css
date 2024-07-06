@@ -194,6 +194,8 @@ section.gallery h2 {
 
 #projects .card img {
     height: 55%;
+    width: 100%;
+    object-fit:cover;
 }
 
 #experience .card {
