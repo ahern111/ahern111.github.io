@@ -41,15 +41,15 @@ body {
     color: var(--font-color);
     font-size: var(--text);
     line-height: 1.2;
-    height: 100vh;
+    height: 100dvh;
     padding: 0 2.5vw;
     overflow: visible;
 
     /* grid set-up */
     display: grid;
     grid-template:
-    "profile navbar" 4vh
-    "profile main" 90vh
+    "profile navbar" d4vh
+    "profile main" 90dvh
     / minmax(150px, 250px) minmax(250px, 750px)
     ;
     gap: 10px 15px;
@@ -286,13 +286,13 @@ section.gallery h2 {
         height: auto;
         overflow: unset;
         grid-template: 
-        "navbar" 4vh
-        "profile" 90vh
-        "main" 90vh
+        "navbar" 4dvh
+        "profile" 90dvh
+        "main" 90dvh
         / 1fr
         ; 
         gap: 5px;
-        padding: 2.5vh 2.5vw;
+        padding: 2.5dvh 2.5vw;
     }
     .profile, nav{
         min-width: 100%;
@@ -309,13 +309,13 @@ section.gallery h2 {
     }
     nav {
         position: fixed;
-        padding: 1.25vh 0;
+        padding: 1.25dvh 0;
         top: 0;
         left: 0;
         background-color: var(--bg-color);
     }
     section {
-        padding-top: 6vh;
+        padding-top: 6dvh;
     }
     #experience .card {
         height: 250px;
