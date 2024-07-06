@@ -13,6 +13,7 @@
     --font-color: #EEEEEE; 
     --hero-color: #DC5F00;
 
+    /* --hero-color: #00dc21; like this color too*/
     /* possible light mode */
     /* --bg-color: #EEEEEE; */
     /* --hg-color: #686d767e; */
@@ -41,15 +42,15 @@ body {
     color: var(--font-color);
     font-size: var(--text);
     line-height: 1.2;
-    height: 100lvh;
+    height: 100vh;
     padding: 0 2.5vw;
     overflow: visible;
 
     /* grid set-up */
     display: grid;
     grid-template:
-    "profile navbar" 4lvh
-    "profile main" 90lvh
+    "profile navbar" 4vh
+    "profile main" 90vh
     / minmax(150px, 250px) minmax(250px, 750px)
     ;
     gap: 10px 15px;
@@ -286,13 +287,13 @@ section.gallery h2 {
         height: auto;
         overflow: unset;
         grid-template: 
-        "navbar" 4lvh
-        "profile" 90lvh
-        "main" 90lvh
+        "navbar" 4vh
+        "profile" 90vh
+        "main" 90vh
         / 1fr
         ; 
         gap: 5px;
-        padding: 2.5lvh 2.5vw;
+        padding: 2.5vh 2.5vw;
     }
     .profile, nav{
         min-width: 100%;
@@ -309,13 +310,13 @@ section.gallery h2 {
     }
     nav {
         position: fixed;
-        padding: 1.25lvh 0;
+        padding: 1.25vh 0;
         top: 0;
         left: 0;
         background-color: var(--bg-color);
     }
     section {
-        padding-top: 6lvh;
+        padding-top: 6vh;
     }
     #experience .card {
         height: 250px;
