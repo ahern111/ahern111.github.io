@@ -195,9 +195,6 @@ section.gallery h2 {
     height: 55%;
 }
 
-.card * {
-    /* border: 1px solid; */
-}
 #experience .card {
     /* border: 1px solid; */
     display: grid;
@@ -299,6 +296,16 @@ section.gallery h2 {
     }
     .profile, nav{
         min-width: 100%;
+    }
+    .profile > h3 {
+        font-size: calc(var(--subHeading)*1.5);
+    }
+    .profile > ul {
+        flex-direction: column;
+        font-size: var(--subHeading);
+    }
+    .profile > ul > li {
+        width: 120px;
     }
     nav {
         position: fixed;
