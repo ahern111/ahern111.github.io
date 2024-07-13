@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./styles.css" />
     </head>
     <body>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1438" height="560" preserveAspectRatio="none" viewBox="0 0 1438 560">
+        <svg class="svg-bg" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1438" height="560" preserveAspectRatio="none" viewBox="0 0 1438 560">
             <g mask="url(&quot;#SvgjsMask1009&quot;)" fill="none">
                 <path d="M926 153L1272 499" stroke-width="8" stroke="url(&quot;#SvgjsLinearGradient1010&quot;)" stroke-linecap="round" class="BottomRight"></path>
                 <path d="M504 166L795 457" stroke-width="8" stroke="url(&quot;#SvgjsLinearGradient1011&quot;)" stroke-linecap="round" class="TopLeft"></path>
@@ -72,13 +72,30 @@
             </ul>
         </div>
         <nav>
-            <ul class="navbar">
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="nav-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </div>
+            <!-- <ul class="navbar">
                 <li><a href="#home">Home</a></li>
-                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="#">About</a></li> 
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-            </ul>
+            </ul> -->
         </nav>
         <div class="page">
             <section id="home">
